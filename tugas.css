@@ -1,0 +1,84 @@
+body{
+    background-color: cornsilk;
+    margin : 0;
+}
+
+header{
+    display: flex;
+    padding:5px;
+    background-color:rgba(196, 144, 101, 0.582);
+}
+
+.foto{
+    width:140px;
+}
+
+
+.nama{
+    /*
+    display: inline;
+    margin-bottom: 100px;
+    background-color: darkblue;
+    */
+    font-family:Orbitron;
+    font-weight: bolder;
+    font-size: 35px;
+    margin-top: 45px;
+    margin-left: 15px;
+    text-align: center;
+}
+
+.container{
+    display:grid;
+    /* margin: auto; */
+    grid-template-areas: 
+        "education experience skills";
+    /*
+    background-color: crimson;
+    */
+    padding:20px;
+    max-width: 1200px;
+    margin:auto;
+    margin-top: 15px;
+ 
+    gap : 10px;
+}
+
+
+.education{
+    grid-area: education;
+    background-color: snow;
+}
+
+.experience{
+    grid-area: experience;
+    background-color: snow;
+}
+
+.skills{
+    grid-area: skills;
+    background-color: snow;
+}
+
+.icon{
+    width:40px;
+    margin-bottom:20px;
+    margin-right: 10px;
+}
+
+li{
+    font-family: 'Courier New', Courier, monospace;
+}
+
+h4{
+    text-align: center;
+    font-family:Orbitron;
+}
+
+footer{
+    text-align: center;
+    background-color: rgba(196, 144, 101, 0.582);
+    bottom:0;
+    position:absolute;
+    width: 100%;
+}
