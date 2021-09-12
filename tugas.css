@@ -1,25 +1,103 @@
-body{
+body.light{
     background-color: cornsilk;
     margin : 0;
 }
 
-header{
+body.dark{
+    background-color: rgb(51, 58, 59);
+    margin : 0;
+}
+
+header.light{
     display: flex;
     padding:5px;
     background-color:rgba(196, 144, 101, 0.582);
 }
 
-.foto{
+header.dark{
+    color:white;
+    display: flex;
+    padding:5px;
+    background-color:rgb(28, 28, 32)
+}
+
+#buttonDark{
+    background:rgb(66, 62, 62);
+    color:white;
+    cursor: pointer;
+    line-height: 1;
+    text-align: center;
+    text-transform: uppercase;
+    font-family: Orbitron;
+    font-weight: 700;
+    font-size:11pt;
+    position: absolute;
+    margin-left: 85%;
+    margin-top: 3%;
+    border-radius: 1em;
+    border-top:5px solid black;
+    border-left:5px solid black;
+    border-right:5px solid black;
+    border-bottom:5px solid black;
+    padding:10px 20px;
+    display: block;
+}
+
+#buttonDark:hover{
+    border-color: black;
+    transition: all 150ms ease-in-out;
+    box-shadow: 0 0 10px 0 black inset, 0 0 10px 4px black;
+}
+
+#buttonLight{
+    background:#2C97DF;
+    color:white;
+    cursor: pointer;
+    line-height: 1;
+    text-align: center;
+    text-transform: uppercase;
+    font-family: Orbitron;
+    font-weight: 700;
+    font-size:11pt;
+    position: absolute;
+    margin-left: 85%;
+    margin-top: 3%;
+    border-radius: 1em;
+    border-top:5px solid #2A80B9;
+    border-left:5px solid #2A80B9;
+    border-right:5px solid #2A80B9;
+    border-bottom:5px solid #2A80B9;
+    padding:10px 20px;
+    display: none;
+}
+
+#buttonLight:hover{
+    border-color: #2A80B9;
+    transition: all 150ms ease-in-out;
+    box-shadow: 0 0 10px 0 #2A80B9 inset, 0 0 10px 4px #2A80B9;
+}
+
+#foto1.light{
+    display: block;
     width:140px;
 }
 
+#foto1.dark{
+    display: none;
+    width:140px;
+}
+
+#foto2.light{
+    display: none;
+    width:140px;
+}
+
+#foto2.dark{
+    display: block;
+    width:140px;
+}
 
 .nama{
-    /*
-    display: inline;
-    margin-bottom: 100px;
-    background-color: darkblue;
-    */
     font-family:Orbitron;
     font-weight: bolder;
     font-size: 35px;
@@ -30,12 +108,8 @@ header{
 
 .container{
     display:grid;
-    /* margin: auto; */
     grid-template-areas: 
         "education experience skills";
-    /*
-    background-color: crimson;
-    */
     padding:20px;
     max-width: 1200px;
     margin:auto;
@@ -44,23 +118,62 @@ header{
     gap : 10px;
 }
 
-
-.education{
+#education.light{
     grid-area: education;
     background-color: snow;
 }
 
-.experience{
+#education.dark{
+    color :aliceblue;
+    grid-area: education;
+    background-color: rgb(88, 97, 99);
+}
+
+#experience.light{
     grid-area: experience;
     background-color: snow;
 }
 
-.skills{
+#experience.dark{
+    color :aliceblue;
+    grid-area: experience;
+    background-color: rgb(88, 97, 99);
+}
+
+#skills.light{
     grid-area: skills;
     background-color: snow;
 }
 
+#skills.dark{
+    color :aliceblue;
+    grid-area: skills;
+    background-color: rgb(88, 97, 99);
+}
+
+#pics.light{
+    display: block;
+}
+
+#pics.dark{
+    display: none;
+}
+
+#pics2.light{
+    display: none;
+}
+
+#pics2.dark{
+    display: block;
+}
+
 .icon{
+    width:40px;
+    margin-bottom:20px;
+    margin-right: 10px;
+}
+
+.icon2{
     width:40px;
     margin-bottom:20px;
     margin-right: 10px;
@@ -75,7 +188,23 @@ h4{
     font-family:Orbitron;
 }
 
-footer{
+#contact.dark{
+    color :white
+}
+
+#contact.light{
+    color :black
+}
+
+footer.dark{
+    text-align: center;
+    background-color: rgb(28, 28, 32);
+    bottom:0;
+    position:absolute;
+    width: 100%;
+}
+
+footer.light{
     text-align: center;
     background-color: rgba(196, 144, 101, 0.582);
     bottom:0;
